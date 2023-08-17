@@ -8,7 +8,7 @@ import colors from "colors";
 
 export const MongoDBCnncetion =async()=>{
     try {
-        const conncetion = await mongoose.connect(process.env.MOGO_SERVER)
+        const conncetion = await mongoose.connect("mongodb+srv://Ashraful:E0rRgRanXwiDTLyJ@mern.sho5qfe.mongodb.net/shop")
         console.log(`MongoDB connection successfully !`.bgGreen.cyan)
     } catch (error) {
         console.log(error.message)
